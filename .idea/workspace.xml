@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a0e1cd0-d3dd-4585-b06b-b7b18f6db266" name="Default" comment="derp derp">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/jmx-hprof.groovy" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/jmx-memory.groovy" afterPath="$PROJECT_DIR$/src/jmx-memory.groovy" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="probe-scripts.iws" />
@@ -29,11 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="jmx-memory.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="jmx-memory.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/jmx-memory.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-              <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
+            <state vertical-scroll-proportion="0.28140703" vertical-offset="0" max-vertical-offset="398">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -59,12 +59,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jmx-hprof.groovy" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="jmx-hprof.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/jmx-hprof.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23844282" vertical-offset="0" max-vertical-offset="411">
-              <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="420">
+              <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemoryUsage.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar:///usr/lib/jvm/java-7-openjdk-i386/src.zip!/java/lang/management/MemoryUsage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2705" max-vertical-offset="3906">
+              <caret line="233" column="16" selection-start-line="233" selection-start-column="16" selection-end-line="233" selection-end-column="16" />
+              <folding>
+                <element signature="e#8790#8791#0" expanded="true" />
+                <element signature="e#8816#8817#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,8 +97,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/jmx-gc.groovy" />
         <option value="$PROJECT_DIR$/src/hsperf-tenuring.groovy" />
-        <option value="$PROJECT_DIR$/src/jmx-memory.groovy" />
         <option value="$PROJECT_DIR$/src/jmx-hprof.groovy" />
+        <option value="$PROJECT_DIR$/src/jmx-memory.groovy" />
       </list>
     </option>
   </component>
@@ -374,7 +387,7 @@
       <created>1406446138206</created>
       <updated>1406446138206</updated>
       <workItem from="1406446139524" duration="2830000" />
-      <workItem from="1406449001800" duration="2059000" />
+      <workItem from="1406449001800" duration="3085000" />
     </task>
     <task id="LOCAL-00001" summary="derp derp">
       <created>1406446529890</created>
@@ -404,15 +417,19 @@
       <created>1406450784495</created>
       <updated>1406450784495</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="derp derp">
+      <created>1406451064590</created>
+      <updated>1406451064590</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4889000" />
+    <option name="totallyTimeSpent" value="5915000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32515338" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -435,7 +452,7 @@
       <window_info id="Maven Projects" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="27" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Debug with VisualVM" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="20" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42749244" sideWeight="0.6635404" order="5" side_tool="false" content_ui="combo" x="547" y="71" width="477" height="674" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42749244" sideWeight="0.6635404" order="5" side_tool="false" content_ui="combo" x="547" y="71" width="477" height="674" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937685" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="reVu" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="21" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -625,18 +642,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jmx-memory.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
-          <caret line="6" column="63" selection-start-line="6" selection-start-column="63" selection-end-line="6" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hsperf-tenuring.groovy">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="411">
           <caret line="0" column="72" selection-start-line="0" selection-start-column="72" selection-end-line="0" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jmx-hprof.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9" max-vertical-offset="420">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -649,10 +666,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/jmx-hprof.groovy">
+    <entry file="jar:///usr/lib/jvm/java-7-openjdk-i386/src.zip!/java/lang/management/MemoryUsage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23844282" vertical-offset="0" max-vertical-offset="411">
-          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2705" max-vertical-offset="3906">
+          <caret line="233" column="16" selection-start-line="233" selection-start-column="16" selection-end-line="233" selection-end-column="16" />
+          <folding>
+            <element signature="e#8790#8791#0" expanded="true" />
+            <element signature="e#8816#8817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/jmx-memory.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28140703" vertical-offset="0" max-vertical-offset="398">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding />
         </state>
       </provider>
