@@ -1,4 +1,4 @@
-sprintf('\n%20.20s %8d %8d %8d %2.2f %2.2f %2.2f %20.20s %s',"Memory Pool","used","peak","max","used%","peak%","gc%","type","garbage collectors") +
+sprintf('\n%20.20s %8s %8s %8s %5s %5s %5s %20.20s %s', "Memory Pool", "used", "peak", "max", "used%", "peak%", "gc%", "type", "garbage collectors") +
 java.lang.management.ManagementFactory.memoryPoolMXBeans.collect { mp ->
     def usageUsed = (long) mp.getUsage().getUsed() / (1024L * 1024L)
     def max = (long) mp.getUsage().getMax() / (1024L * 1024L)
