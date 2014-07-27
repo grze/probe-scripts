@@ -1,0 +1,473 @@
+2013-03-29 15:20:09  WARN 000000802 Binding                  | org.jibx.runtime.JiBXException: Expected "{http://eucalyptus.ucsb.edu/}value" start tag, found "{http://eucalyptus.ucsb.edu/}values
+" end tag (line -1, col -1, in SOAP-message)
+org.jibx.runtime.JiBXException: Expected "{http://eucalyptus.ucsb.edu/}value" start tag, found "{http://eucalyptus.ucsb.edu/}values" end tag (line -1, col -1, in SOAP-message)
+        at org.jibx.runtime.impl.UnmarshallingContext.matchStart(UnmarshallingContext.java:647)
+        at org.jibx.runtime.impl.UnmarshallingContext.parsePastStartTag(UnmarshallingContext.java:680)
+        at org.jibx.runtime.impl.UnmarshallingContext.parseElementText(UnmarshallingContext.java:935)
+        at edu.ucsb.eucalyptus.msgs.MetricDimensionsValuesType.JiBX_eucalyptus_ucsb_edu_unmarshal_2_0(Messages.groovy)
+        at com.eucalyptus.reporting.service.JiBX_www_eucalyptus_com_ns_reporting_2012_08_24MungeAdapter.JiBX_eucalyptus_ucsb_edu_unmarshal_1_716()
+        at edu.ucsb.eucalyptus.msgs.MetricDimensionsType.JiBX_eucalyptus_ucsb_edu_unmarshal_2_0(Messages.groovy)
+        at com.eucalyptus.reporting.service.JiBX_www_eucalyptus_com_ns_reporting_2012_08_24MungeAdapter.JiBX_eucalyptus_ucsb_edu_unmarshal_1_717()
+        at edu.ucsb.eucalyptus.msgs.MetricCounterType.JiBX_eucalyptus_ucsb_edu_unmarshal_2_0(Messages.groovy)
+        at com.eucalyptus.reporting.service.JiBX_www_eucalyptus_com_ns_reporting_2012_08_24MungeAdapter.JiBX_eucalyptus_ucsb_edu_unmarshal_1_718()
+        at edu.ucsb.eucalyptus.msgs.MetricsResourceType.JiBX_eucalyptus_ucsb_edu_unmarshal_2_0(Messages.groovy)
+        at com.eucalyptus.reporting.service.JiBX_www_eucalyptus_com_ns_reporting_2012_08_24MungeAdapter.JiBX_eucalyptus_ucsb_edu_unmarshal_1_719()
+        at edu.ucsb.eucalyptus.msgs.SensorsResourceType.JiBX_eucalyptus_ucsb_edu_unmarshal_2_0(Messages.groovy)
+        at com.eucalyptus.reporting.service.JiBX_www_eucalyptus_com_ns_reporting_2012_08_24MungeAdapter.JiBX_eucalyptus_ucsb_edu_unmarshal_1_720()
+        at edu.ucsb.eucalyptus.msgs.DescribeSensorsResponse.JiBX_eucalyptus_ucsb_edu_unmarshal_4_0(Messages.groovy)
+        at edu.ucsb.eucalyptus.msgs.JiBX_eucalyptus_ucsb_eduDescribeSensorsResponse_access.unmarshal()
+        at org.jibx.runtime.impl.UnmarshallingContext.unmarshalElement(UnmarshallingContext.java:2757)
+        at com.eucalyptus.binding.Binding.fromOM(Binding.java:287)
+        at com.eucalyptus.ws.handlers.BindingHandler.incomingMessage(BindingHandler.java:160)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.incomingMessage(MessageStackHandler.java:105)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:114)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:116)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:116)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:116)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:116)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:385)
+        at org.jboss.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:124)
+        at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:87)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:385)
+        at org.jboss.netty.handler.codec.replay.ReplayingDecoder.unfoldAndfireMessageReceived(ReplayingDecoder.java:459)
+        at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:443)
+        at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:381)
+        at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:87)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at org.jboss.netty.handler.timeout.IdleStateHandler.messageReceived(IdleStateHandler.java:214)
+        at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:87)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at org.jboss.netty.handler.timeout.ReadTimeoutHandler.messageReceived(ReadTimeoutHandler.java:146)
+        at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:87)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:562)
+        at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:342)
+        at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:329)
+        at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:330)
+        at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:282)
+        at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:203)
+        at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:110)
+        at org.jboss.netty.util.internal.IoWorkerRunnable.run(IoWorkerRunnable.java:53)
+        at org.jboss.netty.handler.execution.MemoryAwareThreadPoolExecutor$MemoryAwareRunnable.run(MemoryAwareThreadPoolExecutor.java:502)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+        at java.lang.Thread.run(Thread.java:679)
+2013-03-29 15:20:09  WARN 000000802 Binding                  | org.apache.axiom.om.OMException: com.ctc.wstx.exc.WstxParsingException: Unexpected '<'  in attribute value
+                          |  at [row,col {unknown-source}]: [1,37]
+org.apache.axiom.om.OMException: com.ctc.wstx.exc.WstxParsingException: Unexpected '<'  in attribute value
+ at [row,col {unknown-source}]: [1,37]
+        at org.apache.axiom.om.impl.builder.StAXOMBuilder.next(Unknown Source)
+        at org.apache.axiom.om.impl.llom.OMDocumentImpl.getOMDocumentElement(Unknown Source)
+        at org.apache.axiom.om.impl.builder.StAXOMBuilder.getDocumentElement(Unknown Source)
+        at com.eucalyptus.binding.Binding.fromOM(Binding.java:253)
+        at com.eucalyptus.binding.Binding.fromOM(Binding.java:277)
+        at com.eucalyptus.ws.handlers.BindingHandler.incomingMessage(BindingHandler.java:164)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.incomingMessage(MessageStackHandler.java:105)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:114)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:116)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:116)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:116)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at com.eucalyptus.ws.handlers.MessageStackHandler.handleUpstream(MessageStackHandler.java:116)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:385)
+        at org.jboss.netty.handler.codec.http.HttpChunkAggregator.messageReceived(HttpChunkAggregator.java:124)
+        at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:87)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:385)
+        at org.jboss.netty.handler.codec.replay.ReplayingDecoder.unfoldAndfireMessageReceived(ReplayingDecoder.java:459)
+        at org.jboss.netty.handler.codec.replay.ReplayingDecoder.callDecode(ReplayingDecoder.java:443)
+        at org.jboss.netty.handler.codec.replay.ReplayingDecoder.messageReceived(ReplayingDecoder.java:381)
+        at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:87)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at org.jboss.netty.handler.timeout.IdleStateHandler.messageReceived(IdleStateHandler.java:214)
+        at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:87)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline$DefaultChannelHandlerContext.sendUpstream(DefaultChannelPipeline.java:803)
+        at org.jboss.netty.handler.timeout.ReadTimeoutHandler.messageReceived(ReadTimeoutHandler.java:146)
+        at org.jboss.netty.channel.SimpleChannelUpstreamHandler.handleUpstream(SimpleChannelUpstreamHandler.java:87)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:567)
+        at org.jboss.netty.channel.DefaultChannelPipeline.sendUpstream(DefaultChannelPipeline.java:562)
+        at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:342)
+        at org.jboss.netty.channel.Channels.fireMessageReceived(Channels.java:329)
+        at org.jboss.netty.channel.socket.nio.NioWorker.read(NioWorker.java:330)
+        at org.jboss.netty.channel.socket.nio.NioWorker.processSelectedKeys(NioWorker.java:282)
+        at org.jboss.netty.channel.socket.nio.NioWorker.run(NioWorker.java:203)
+        at org.jboss.netty.util.ThreadRenamingRunnable.run(ThreadRenamingRunnable.java:110)
+        at org.jboss.netty.util.internal.IoWorkerRunnable.run(IoWorkerRunnable.java:53)
+        at org.jboss.netty.handler.execution.MemoryAwareThreadPoolExecutor$MemoryAwareRunnable.run(MemoryAwareThreadPoolExecutor.java:502)
+        at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1146)
+        at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+        at java.lang.Thread.run(Thread.java:679)
+
+Caused by: com.ctc.wstx.exc.WstxParsingException: Unexpected '<'  in attribute value
+ at [row,col {unknown-source}]: [1,37]
+        at com.ctc.wstx.sr.StreamScanner.constructWfcException(StreamScanner.java:580)
+        at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:453)
+        at com.ctc.wstx.sr.StreamScanner.throwParseError(StreamScanner.java:438)
+        at com.ctc.wstx.sr.BasicStreamReader.parseNormalizedAttrValue(BasicStreamReader.java:1913)
+        at com.ctc.wstx.sr.BasicStreamReader.handleNsAttrs(BasicStreamReader.java:3013)
+        at com.ctc.wstx.sr.BasicStreamReader.handleStartElem(BasicStreamReader.java:2910)
+        at com.ctc.wstx.sr.BasicStreamReader.handleRootElem(BasicStreamReader.java:2055)
+        at com.ctc.wstx.sr.BasicStreamReader.nextFromProlog(BasicStreamReader.java:2035)
+        at com.ctc.wstx.sr.BasicStreamReader.next(BasicStreamReader.java:1106)
+        at javax.xml.stream.util.StreamReaderDelegate.next(StreamReaderDelegate.java:88)
+        at org.apache.axiom.om.impl.builder.SafeXMLStreamReader.next(Unknown Source)
+        at org.apache.axiom.om.impl.builder.StAXOMBuilder.parserNext(Unknown Source)
+        ... 53 more
+2013-03-29 15:20:09  WARN 000000802 BindingHandler           | FAILED TO PARSE:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+  <soapenv:Header xmlns:wsa="http://www.w3.org/2005/08/addressing">
+    <wsa:Action xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+      wsu:Id="SigID-d14a1980-98be-1e21-33c1">EucalyptusCC#DescribeSensors</wsa:Action>
+    <wsa:From xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+      wsu:Id="SigID-d14a19c6-98be-1e21-33c2">
+      <wsa:Address>http://192.168.51.75:8774/axis2/services/EucalyptusCC</wsa:Address>
+    </wsa:From>
+    <wsa:MessageID xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+      wsu:Id="SigID-d14a19ee-98be-1e21-33c3">urn:uuid:d149d362-98be-1e21-33bf-b8ac6f856b1b</wsa:MessageID>
+    <wsa:RelatesTo wsa:RelationshipType="http://www.w3.org/2005/08/addressing/reply"
+      xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="SigID-d14a1a20-98be-1e21-33c4">urn:uuid:F23C0BDB1B54440E9390F8D728C559D1
+    </wsa:RelatesTo>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"
+      soapenv:mustUnderstand="1">
+      <wsse:BinarySecurityToken
+        EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary"
+        xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="CertID-d14a1214-98be-1e21-33c0"
+        ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3">MIIDHTCCAgWgAwIBAgIGG/8x+ETnMA0GCSqGSIb3DQEBDQUAMEUxCzAJBgNVBAYTAlVTMQ4wDAYDVQQKEwVDbG91ZDETMBEGA1UECxMKRXVjYWx5cHR1czERMA8GA1UEAwwIY2MtQ0NfNzUwHhcNMTMwMzI4MDQxMDQxWhcNMTgwMzI4MDQxMDQxWjBFMQswCQYDVQQGEwJVUzEOMAwGA1UEChMFQ2xvdWQxEzARBgNVBAsTCkV1Y2FseXB0dXMxETAPBgNVBAMMCGNjLUNDXzc1MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmXO+ifFgONdSQo18GS+Vy6IdJlxNVhNyMdC51BvELgM1/nQVHyK4Sah39RJEDLsn3NqzBJKBXgnhEJ+rMP01eA8wkl8KjPKozIb2OqWYPLeqyaSG/HGFriUBSwm1yAy/67zl17/d5+oiQO46rnCqEa0kAjHYgOtgB6vk1gmxIalGo6hvmq0vGVwx8hMy04MwM4YyAnJtr/NGWGwYSCGXPU+9pRUfa3ScLXf6VEuTcs6GQb/NfKCnabvXFTnd5lZL2Kcx6Femcz8zfLsDud0OKrrr7WToT1JaixlIYM2MCTNFBoPyG7swCI8zQWvuiypJYpcGPFEvrraBEJ2N/vOvUQIDAQABoxMwETAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBDQUAA4IBAQBPAzdfA94HBP3+zd+aBQQoBZUyvMgbxAWmgs7UlTZhuwY9BMcLr2nkowcvHLIxR3rmPO9OhkVTQmLvgba7keHgGQI4etif2wYUljhxIsO4YjkE5HaiMeS1DLldR6YKUrd1rlaS8MWTyMLm2BnPfQHM/NWU8FtpcC+08HpMQ5lNQpWg7d5hTGZM24RlfwCXu868D8Tb9EpfeaBuMhICOdyzr2BvF2ylKA0UN5o8/3lDQndMlYZQhBUHwxrlFNgi/IcTeWyftXkm66sdF+OA5r894luc/Qvd6sv46NPDljCBAkVGZ8v4TQHAGGAWq3XfrSB6ZfKh33Ou0Eczf/TndzwM
+      </wsse:BinarySecurityToken>
+      <wsu:Timestamp xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+        wsu:Id="SigID-d14a1a7a-98be-1e21-33c6">
+        <wsu:Created>2013-03-29T22:20:09.704Z</wsu:Created>
+        <wsu:Expires>2013-03-29T22:25:09.704Z</wsu:Expires>
+      </wsu:Timestamp>
+      <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="SigID-d14a1cc8-98be-1e21-33c7">
+        <ds:SignedInfo>
+          <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:CanonicalizationMethod>
+          <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod>
+          <ds:Reference URI="#SigID-d14a1980-98be-1e21-33c1">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+            <ds:DigestValue>OFmNXrgvoUoEZkYrWBMDOhAAqV0=</ds:DigestValue>
+          </ds:Reference>
+          <ds:Reference URI="#SigID-d14a19c6-98be-1e21-33c2">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+            <ds:DigestValue>cbR8ex+Xw3mOxMJ8P/imNAYhFa4=</ds:DigestValue>
+          </ds:Reference>
+          <ds:Reference URI="#SigID-d14a19ee-98be-1e21-33c3">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+            <ds:DigestValue>yb5LzVCM8sop57HsSkB/m+61LOA=</ds:DigestValue>
+          </ds:Reference>
+          <ds:Reference URI="#SigID-d14a1a20-98be-1e21-33c4">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+            <ds:DigestValue>HcQeC1FHnJSOaD4mtrFCr0gM4Mg=</ds:DigestValue>
+          </ds:Reference>
+          <ds:Reference URI="#SigID-d14a1a48-98be-1e21-33c5">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+            <ds:DigestValue>HNLLic5tRSqaLnVuCvegMjDG5UY=</ds:DigestValue>
+          </ds:Reference>
+          <ds:Reference URI="#SigID-d14a1a7a-98be-1e21-33c6">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"></ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+            <ds:DigestValue>CSWNXxgasMJ58aZzIXDV3Vr+ABc=</ds:DigestValue>
+          </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>k3J8iNt9puWEKVTe4MlKQDkpLPB0BCoi+hPU4LYLIUee4FEUwdigVUiMBjKEFiX8+8XzUYcnn8SFcvXy58M6uM1NB1ZWURUjjmXyx/dWFhvPyU24hW1QPc7T6MNPs4cCdb8JUHdCEy2Gr3DoYKtX/YvpmikiV45hzcHIEv1+Dxde4JPcFHyTHy4UxRehQ8fdNkodRx2nhRgVN14uBtZ/qqQS04caV2vbxiciURASRAip9yP80Uuoc594lDAc6gwETzU6C5DtaOQuE9ZOe2oADfa870tXcSH76hPRj+ONU1QHYfpXdZjL1xoWsHnLcMAT1XvcwdK2PIzVhggvsL1NPQ==
+        </ds:SignatureValue>
+        <ds:KeyInfo>
+          <wsse:SecurityTokenReference>
+            <wsse:Reference URI="#CertID-d14a1214-98be-1e21-33c0"
+              ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3"></wsse:Reference>
+          </wsse:SecurityTokenReference>
+        </ds:KeyInfo>
+      </ds:Signature>
+    </wsse:Security>
+  </soapenv:Header>
+  <soapenv:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+    wsu:Id="SigID-d14a1a48-98be-1e21-33c5">
+    <n:DescribeSensorsResponse xmlns:n="http://eucalyptus.ucsb.edu/">
+      <n:correlationId>cac48f82-c74e-4719-9cf6-75f1e12640f2</n:correlationId>
+      <n:userId>admin</n:userId>
+      <n:return>true</n:return>
+      <n:sensorsResources>
+        <n:resourceName>i-278E3D26</n:resourceName>
+        <n:resourceType>instance</n:resourceType>
+        <n:resourceUuid>567a0f86-822c-4ac2-bd41-0af2d2c9396d</n:resourceUuid>
+        <n:metrics>
+          <n:metricName>CPUUtilization</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>default</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.247Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.246Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.246Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.253Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.250Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+        <n:metrics>
+          <n:metricName>NetworkIn</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>total</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.277Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.277Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.276Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.283Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.280Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+        <n:metrics>
+          <n:metricName>NetworkOut</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>total</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.277Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.277Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.276Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.283Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.280Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+        <n:metrics>
+          <n:metricName>DiskReadOps</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>vda</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.220Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+        <n:metrics>
+          <n:metricName>DiskWriteOps</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>vda</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.220Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+        <n:metrics>
+          <n:metricName>DiskReadBytes</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>vda</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.220Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+        <n:metrics>
+          <n:metricName>DiskWriteBytes</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>vda</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.220Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+        <n:metrics>
+          <n:metricName>VolumeTotalReadTime</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>vda</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.220Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+        <n:metrics>
+          <n:metricName>VolumeTotalWriteTime</n:metricName>
+          <n:counters>
+            <n:type>summation</n:type>
+            <n:collectionIntervalMs>150000</n:collectionIntervalMs>
+            <n:sequenceNum>291</n:sequenceNum>
+            <n:dimensions>
+              <n:dimensionName>vda</n:dimensionName>
+              <n:values>
+                <n:timestamp>2013-03-30T00:02:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:05:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:07:30.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:10:00.220Z</n:timestamp>
+              </n:values>
+              <n:values>
+                <n:timestamp>2013-03-30T00:12:30.220Z</n:timestamp>
+              </n:values>
+            </n:dimensions>
+          </n:counters>
+        </n:metrics>
+      </n:sensorsResources>
+    </n:DescribeSensorsResponse>
+  </soapenv:Body>
+</soapenv:Envelope>

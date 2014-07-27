@@ -1,0 +1,4 @@
+import com.eucalyptus.event.ListenerRegistry;
+
+
+ListenerRegistry.ReentrantListenerRegistry.class.protectionDomain.classLoader
