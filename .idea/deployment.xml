@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" uploadOnCheckin="cbd961c9-ead6-409d-8122-3be4bfcda038">
+  <component name="PublishConfigData" autoUpload="Always" serverName="10.112.10.1" uploadOnCheckin="cbd961c9-ead6-409d-8122-3be4bfcda038">
+    <serverData>
+      <paths name="10.112.10.1">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/probe-scripts" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
     <option name="myUploadOnCheckinName" value="10.112.10.1" />
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>
 
